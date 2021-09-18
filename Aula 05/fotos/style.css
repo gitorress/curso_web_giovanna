@@ -1,0 +1,21 @@
+table{
+    width: 590px;
+     height: 385px;
+     border: solid 3px black;
+     border-spacing: 08px 10px;
+     margin: 5px;
+}
+
+th{
+    border-top: solid 3px red;
+    border-bottom: solid 3px red;
+    height: 50px;
+    margin-top: 10px !important;
+}
+
+td{
+    border-left: solid 3px red;
+    border-right: solid 3px red;
+    height: 40px;
+
+}
