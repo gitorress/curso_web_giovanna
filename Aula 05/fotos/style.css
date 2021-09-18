@@ -1,9 +1,31 @@
+.principal{
+
+    width: 600px;
+    height: 630px; 
+    border: solid 3px black;
+}
+
+.formulario{
+
+    width: 585px;
+     height: 80px; 
+     border: solid 3px black; 
+     margin: 5px;
+      color: black;
+       text-align: center; 
+       line-height: 80px; 
+       text-shadow: 2px 2px 5px black;
+    background-color: lightgreen;
+
+}
+
 table{
     width: 590px;
      height: 385px;
      border: solid 3px black;
      border-spacing: 08px 10px;
      margin: 5px;
+     background-color: lightpink;
 }
 
 th{
@@ -11,11 +33,13 @@ th{
     border-bottom: solid 3px red;
     height: 50px;
     margin-top: 10px !important;
+    background-color:  white;
 }
 
 td{
     border-left: solid 3px red;
     border-right: solid 3px red;
     height: 40px;
+    background-color:  white;
 
 }
