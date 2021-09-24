@@ -1,0 +1,32 @@
+.principal{
+    width: 900px;
+    height: 500px;
+    border: solid 3px rgba(46, 116, 173, 0.87);
+    margin: 15px;
+    background-color: rgba(46, 116, 173, 0.87);
+}
+
+.secundaria{
+    width: 870px;
+    height: 470px;
+    border: solid 3px rgba(46, 116, 173, 0.87);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+th{
+    width: 870px;
+    height: 80px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    
+}
+td{
+    width: 870px;
+    height: 390px;
+    border-right: solid 1px black;
+}
+table{
+    border-collapse: collapse;
+}
