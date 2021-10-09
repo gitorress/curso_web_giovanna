@@ -1,0 +1,48 @@
+.caixa_servico{
+
+    border: solid 1px black;
+    text-align: center;
+    margin: 30px;
+    background: black;
+}
+
+.card-img-top{
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.caixa_titulo{
+    border: solid 1px black;
+    text-align: center;
+    margin: 10px;
+    background: black;
+}
+
+.caixa_conteudo1{
+    border: solid 1px black;
+    text-align: left;
+    margin: 10px;
+    background: black;
+}
+
+.caixa_conteudo2{
+    border: solid 1px black;
+    text-align: right;
+    margin: 10px;
+    background: black;
+}
+.redonda{
+    border-radius: 50px black;
+    
+}
+@media (max-width: 768px){
+    .caixa_servico_direita{
+        text-align: center;
+        /*display: none;*/
+    }
+
+    .caixa_servico_esquerda{
+        text-align: center;
+    }
+
+}
