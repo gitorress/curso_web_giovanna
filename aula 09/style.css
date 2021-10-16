@@ -1,0 +1,13 @@
+th:first-child, td:first-child{
+    position: sticky;
+    left: 0px;
+    background-color: rgb(115, 152, 221) !important;
+}
+
+
+.btn .badge{
+
+    border-radius: 100% !important;
+    background-color: lightskyblue
+     !important;
+}
