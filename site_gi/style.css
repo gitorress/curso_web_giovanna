@@ -1,0 +1,32 @@
+.banner_padrao{
+    height: 500px !important;
+   object-fit: fill;
+}
+.container{
+    background-image:  hsl(210, 9%, 96%);
+}
+.caixa_servico{
+
+    border: solid 1px hsl(210, 9%, 96%) ;
+    text-align: center;
+    margin: 30px;
+    width: 200px;
+}
+
+
+
+.card-img-top{
+    min-height: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+
+}
+
+.caixa_formulario{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.btn-primary{
+    width: 100%;
+}
