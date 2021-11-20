@@ -1,0 +1,36 @@
+https://www.apachefriends.org/pt_br/index.html
+
+https://us04web.zoom.us/j/75229190554?pwd=cm9WUVcwVExsTm5WNGpleXZBM0xVZz09
+
+--------------
+EXCERCIO
+--------------
+
+> (MAIOR)
+< (MENOR)
+= (IGUAL)
+
+1. TRAZER TODOS OS ALUNOS DO SEXO MASCULINO [TODAS AS COLUNAS]
+ R: SELECT * FROM `alunos` WHERE sexo='m';
+
+2. TRAZER TODOS OS ALUNOS DO SEXO FEMININO [CODIGO, NOME, SEXO, DT_CADASTRO]
+R:SELECT cd_aluno, nome, sexo, dt_cadastro FROM `alunos` WHERE sexo='f';
+
+3. TRAZER TODOS OS ALUNOS COM IDADE MAIOR QUE 25 [NOME, IDADE]
+R:SELECT nome, idade FROM `alunos` WHERE idade >25;
+
+
+4. TRAZER TODOS OS ALUNOS COM IDADE MAIOR QUE 20 E QUE SEJA DO SEXO MASCULINO [TODAS AS COLUNAS]
+R:SELECT * FROM `alunos` WHERE idade >20 AND sexo='m';
+
+
+5. TRAZER TODOS OS ALUNOS COM IDADE MENOR QUE 20 [TODAS AS COLUNAS]
+R:SELECT * FROM `alunos` WHERE idade>20;
+
+
+6. TRAZER TODOS OS ALUNOS COM IDADE IGUAL a 18 [IDADE, NOME, DT_CADASTRO]
+R:SELECT nome, idade, dt_cadastro FROM `alunos` WHERE idade=18;
+
+
+7. TRAZER TODOS OS ALUNOS COM IDADE MAIOR OU IGUAL A 18 E MENOS QUE 25 [DT_CADASTRO, IDADE, NOME]
+R:SELECT nome, idade, dt_cadastro FROM `alunos` WHERE idade>=18 AND idade <25;
