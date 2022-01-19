@@ -1,0 +1,56 @@
+Nome:Giovanna
+ 
+1 - Trazer todos os alunos ordenado de forma decrescente por data de cadastro
+SELECT nome, dt_cadastro FROM alunos;
+
+2 - Trazer todos os alunos que começem com a letra J
+SELECT nome, idade, dt_cadastro FROM alunos WHERE nome like 'j%';
+
+3 - Trazer todos os alunos do código 3,7,9 e 11 ordenados pelo nome de forma crescente
+SELECT cd_aluno, nome, idade FROM `alunos` WHERE cd_aluno IN(3,7,9,11) ORDER by nome ASC;
+
+4 - Trazer todos os alunos do sexo femino ou alunos que contenham a letra e no nome
+SELECT nome, idade, sexo FROM `alunos` WHERE sexo='f' and nome like '%e%';
+
+5 - Trazer todos os alunos que do sexo feminino concatenando (unificando) a idade - sexo - dt_cadastro 
+e renomeando a coluna para dados do paciente exemplo:
+cd_aluno | nome | dados_paciente
+SELECT CONCAT(cd_aluno,' - ', nome)AS paciente, idade, sexo FROM `alunos` WHERE sexo='f' ORDER BY nome ASC;
+
+6 - Trazer quantos alunos existem por data de cadastro
+SELECT dt_cadastro, COUNT(cd_aluno) AS QTD FROM alunos GROUP BY dt_cadastro;
+
+7 - Trazer a soma do código do aluno por sexo
+SELECT sexo, SUM(cd_aluno) as quantidade FROM `alunos` GROUP BY sexo;
+
+8 - Trazer quantos alunos tem por idade
+SELECT idade, COUNT(idade) as quantidade FROM `alunos` GROUP BY idade;
+
+9 - Trazer a idade média por sexo
+SELECT sexo, AVG(idade) as quantidade FROM `alunos` GROUP BY sexo;
+
+10 - Trazer o aluno mais novo e mais velho por sexo
+SELECT sexo, MAX(idade) as velho, MIN(idade) as novo
+FROM `alunos` 
+GROUP BY sexo;
+
+11 - Trazer todos os alunos que contenham a letra a ou A letra O
+SELECT * FROM `alunos` WHERE nome like '%A%%O%';
+
+12 - trazer todos os alunos que sejam do sexom masculino e que contenham a letra A
+SELECT NOME, sexo FROM `alunos` WHERE nome like '%A%' AND SEXO='M';
+
+13 - Trazer todos os alunos que contenham o código do aluno entre 5 e 10 ou tenham menos de 25 anos
+ordenador de forma ascendente
+SELECT NOME, IDADE, cd_aluno FROM `alunos` WHERE cd_aluno IN (5,6,7,8,9,10) AND idade<25 ORDER BY cd_aluno ASC;
+
+14 - Trazer os nomes dos alunos e dividir a idade pelo código do aluno renomeando a coluna da conta
+para aluno_multiplicacao ordenando de forma ascendente o sexo
+
+15 - Trazer os códigos dos alunos concatenando a coluna nome, idade, sexo e data de cadastro
+onde os alunos contenham a letra E ou a letra M ou a letra O e que tenham a idade entre 20 a 50 anos
+ordenados pela idade de forma decrescente e o nome de forma ascendente
+
+
+
+'%e%'OR'%m%'OR'%o%'

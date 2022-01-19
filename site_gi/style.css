@@ -30,3 +30,17 @@
 .btn-primary{
     width: 100%;
 }
+
+.btn-light:hover{
+    background-color: rgb(0, 175, 228) !important;
+}
+
+body{
+    background-image: url("fotos/papel3.jpg");
+    
+
+}
+
+.btn:hover{
+    background-color: rgb(0, 175, 228) !important;
+}
